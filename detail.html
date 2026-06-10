@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dettagli e immagini della moto selezionata.">
+  <title>Dettaglio moto | Moto Time</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="detail">
+  <header class="site-header">
+    <a class="brand-mark" href="index.html" aria-label="Moto Time, home"><span class="brand-mark__icon">MT</span><span>Moto Time</span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="index.html">Catalogo</a>
+      <a href="compare.html">Confronta <span class="nav-badge" data-compare-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="detail-page" id="detail-root">
+    <div class="loading-state">Caricamento scheda...</div>
+  </main>
+
+  <div id="compare-tray"></div>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand-mark brand-mark--footer" href="index.html"><span class="brand-mark__icon">MT</span><span>Moto Time</span></a>
+      <p>Prezzi e specifiche sono indicativi: verifica sempre il preventivo finale.</p>
+    </div>
+    <div class="footer-links"><a href="credits.html">Fonti e crediti</a><a href="index.html">Torna al catalogo</a></div>
+  </footer>
+
+  <script src="data/motorcycles.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/detail.js"></script>
+</body>
+</html>

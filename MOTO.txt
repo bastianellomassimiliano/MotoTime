@@ -1,0 +1,52 @@
+Marca :
+- modello soldi cv nm
+
+Aprilia:
+- Tuareg
+
+Benelli:
+- TRK 702 7500€ 70 - 70
+
+CFMOTO:
+- 800MT SPORT 8500€  91 - ??
+
+Ducati:
+- Multistrada V2 16800€ 115 - 92
+
+Honda: 
+- NT1100 14990€ 102 - 112
+- Transalp XL750 10990€ 92 - 72
+- Africa Twin 15500€ 102 - 112 
+- NC750X 9000€ 59 - 69
+
+KTM:
+- 1390 superadventurer 21980€ 175 - 145
+- 890 Adventure R 16290€ 105 - 100
+
+Moto Guzzi:
+- V100 15750€ 115 - 105
+- Stelvio 16550€ 115 - 105
+
+Triumph:
+- TIGER 900 GT PRO 16795€ 108 - 90
+- TIGER 660 9795€ 95 - 68
+- TIGER 800 TOUR 14195€ 115 - 84
+
+VALICO:
+- 900 DSX 9990€ 95 - 95
+
+YAMAHA: 
+- TRACER 9 GT 15399€ 119 - 93
+- TRACER 7 GT 11499€ 70 - 68
+
+ZONTES:
+-703F 7500€ 95 - 75
+
+SUZUKI:
+- GSX-S1000GX 14990€ 152 - 106
+- V-STORM 1050SE 12992€ 107 - 100
+- V-STORM 800SE 8890€ 84 - 78
+
+KAWASAKi:
+- Versys 1100 15490€ 135 - 112 
+- Versys 650 8190€ 67 - 61

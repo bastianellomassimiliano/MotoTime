@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confronta adventure, crossover e sport tourer per scegliere la prossima moto.">
+  <title>Moto Time | Trova la moto giusta</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="catalog">
+  <header class="site-header">
+    <a class="brand-mark" href="index.html" aria-label="Moto Time, home">
+      <span class="brand-mark__icon">MT</span>
+      <span>Moto Time</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a class="is-active" href="index.html">Catalogo</a>
+      <a href="compare.html">Confronta <span class="nav-badge" data-compare-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">24 moto, una scelta importante</p>
+        <h1>La prossima moto si sceglie insieme.</h1>
+        <p>Filtra i modelli, cambia prospettiva e metti i numeri uno accanto all'altro. Senza fretta, senza schede aperte ovunque.</p>
+      </div>
+      <div class="hero__stat" aria-label="Riepilogo catalogo">
+        <span class="hero__number">24</span>
+        <span>modelli verificati<br>e pronti al confronto</span>
+      </div>
+    </section>
+
+    <section class="catalog-shell" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selezione</p>
+          <h2 id="catalog-title">Trova il tuo equilibrio</h2>
+        </div>
+        <button class="text-button" id="reset-filters" type="button">Azzera filtri</button>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-group filter-group--brands">
+          <span class="filter-label">Marca</span>
+          <div class="brand-options" id="brand-options" aria-label="Filtra per marca"></div>
+        </div>
+
+        <div class="filter-grid">
+          <label class="search-field">
+            <span class="filter-label">Cerca</span>
+            <span class="input-with-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+              <input id="search-input" type="search" placeholder="Modello o categoria">
+            </span>
+          </label>
+
+          <fieldset class="range-field">
+            <legend class="filter-label">Prezzo</legend>
+            <div class="range-inputs">
+              <label><span>da</span><input id="price-min" type="number" step="500" inputmode="numeric"></label>
+              <label><span>a</span><input id="price-max" type="number" step="500" inputmode="numeric"></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="range-field">
+            <legend class="filter-label">Potenza (CV)</legend>
+            <div class="range-inputs">
+              <label><span>da</span><input id="hp-min" type="number" step="5" inputmode="numeric"></label>
+              <label><span>a</span><input id="hp-max" type="number" step="5" inputmode="numeric"></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="range-field">
+            <legend class="filter-label">Coppia (Nm)</legend>
+            <div class="range-inputs">
+              <label><span>da</span><input id="torque-min" type="number" step="5" inputmode="numeric"></label>
+              <label><span>a</span><input id="torque-max" type="number" step="5" inputmode="numeric"></label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="catalog-toolbar">
+        <p><strong id="result-count">24</strong> modelli trovati</p>
+        <div class="toolbar-actions">
+          <label class="sort-control">
+            <span>Ordina</span>
+            <select id="sort-select">
+              <option value="brand">Marca</option>
+              <option value="price-asc">Prezzo crescente</option>
+              <option value="price-desc">Prezzo decrescente</option>
+              <option value="power-desc">Piu potenti</option>
+              <option value="weight-asc">Piu leggere</option>
+            </select>
+          </label>
+          <div class="view-switcher" aria-label="Tipo di visualizzazione">
+            <button class="is-active" data-view="grid" type="button" aria-label="Vista a griglia" aria-pressed="true">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z"/></svg>
+            </button>
+            <button data-view="list" type="button" aria-label="Vista a lista" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5h12M8 12h12M8 19h12M4 5h.01M4 12h.01M4 19h.01"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="moto-collection moto-grid" id="moto-collection" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-state__mark">0</span>
+        <h3>Nessuna moto con questi filtri</h3>
+        <p>Allarga uno dei range oppure azzera la selezione.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="compare-tray"></div>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand-mark brand-mark--footer" href="index.html"><span class="brand-mark__icon">MT</span><span>Moto Time</span></a>
+      <p>Uno strumento familiare per scegliere con dati chiari.</p>
+    </div>
+    <div class="footer-links">
+      <a href="credits.html">Fonti e crediti</a>
+      <span>Dati aggiornati al 10 giugno 2026</span>
+    </div>
+  </footer>
+
+  <script src="data/motorcycles.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

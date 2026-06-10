@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confronta direttamente prezzo, potenza, coppia e peso delle moto selezionate.">
+  <title>Confronta moto | Moto Time</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="compare">
+  <header class="site-header">
+    <a class="brand-mark" href="index.html" aria-label="Moto Time, home"><span class="brand-mark__icon">MT</span><span>Moto Time</span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="index.html">Catalogo</a>
+      <a class="is-active" href="compare.html">Confronta <span class="nav-badge" data-compare-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="compare-page">
+    <section class="page-intro">
+      <div>
+        <p class="eyebrow">Faccia a faccia</p>
+        <h1>I numeri, finalmente vicini.</h1>
+        <p>Fino a cinque modelli, letti per colonna. I valori migliori per potenza, coppia, prezzo e peso vengono evidenziati automaticamente.</p>
+      </div>
+      <div class="compare-add">
+        <label for="compare-add-select">Aggiungi un modello</label>
+        <div>
+          <select id="compare-add-select"></select>
+          <button class="button button--primary" id="compare-add-button" type="button">Aggiungi</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare-root" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand-mark brand-mark--footer" href="index.html"><span class="brand-mark__icon">MT</span><span>Moto Time</span></a>
+      <p>Il confronto usa dati dichiarati dai costruttori.</p>
+    </div>
+    <div class="footer-links"><a href="credits.html">Fonti e crediti</a><a href="index.html">Scegli altre moto</a></div>
+  </footer>
+
+  <script src="data/motorcycles.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/compare.js"></script>
+</body>
+</html>
